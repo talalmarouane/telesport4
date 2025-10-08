@@ -1,0 +1,9 @@
+<h2>Test du Service Olympic 🏅</h2>
+
+<div *ngIf="loading">Chargement des données...</div>
+<div *ngIf="error" class="error">❌ Erreur lors du chargement du JSON</div>
+
+<div *ngIf="data">
+  <h3>Données récupérées :</h3>
+  <pre>{{ data | json }}</pre>
+</div>
